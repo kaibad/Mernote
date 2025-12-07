@@ -5,6 +5,7 @@ import cors from "cors";
 import connectDb from "./config/db.js";
 import noteRoutes from "./routes/noteRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import { errorHandler } from "./middleware/errorHandler.js";
 
 dotenv.config();
 connectDb();
@@ -14,6 +15,8 @@ const app = express();
 //middleware
 app.use(cors());
 app.use(express.json());
+
+app.use(errorHandler);
 
 app.use("/api/notes", noteRoutes);
 app.use("/api/auth", authRoutes);
