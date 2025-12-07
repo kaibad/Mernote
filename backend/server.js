@@ -4,6 +4,7 @@ import cors from "cors";
 
 import connectDb from "./config/db.js";
 import noteRoutes from "./routes/noteRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 connectDb();
@@ -15,6 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/notes", noteRoutes);
+app.use("/api/auth", authRoutes);
 app.get("/", (req, res) => {
   res.send("Welcome to Mernote");
 });
