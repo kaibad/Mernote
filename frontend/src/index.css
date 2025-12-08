@@ -1,2 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.site-form {
+  padding: 25px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.site-form .floating-label,
+.site-form .floating-label input,
+.site-form .floating-label textarea {
+  width: 100%;
+  margin: 5px 0;
+  color: #fff;
+  /* font-size: 18px; */
+}
+.site-form .floating-label input::placeholder,
+.site-form .floating-label textarea::placeholder {
+  color: #fff;
+}
+
+.home {
+  min-height: 76vh;
+}

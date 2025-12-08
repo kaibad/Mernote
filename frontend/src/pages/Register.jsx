@@ -21,7 +21,7 @@ const Register = () => {
 
   return (
     <section className="register h-screen flex items-center justify-center">
-      <form className="bg-gray-800 p-6 rounded w-80" onSubmit={handleSubmit}>
+      <form className="site-form" onSubmit={handleSubmit}>
         <h2 className="text-xl mb-4">Register</h2>
         <label className="floating-label">
           <input

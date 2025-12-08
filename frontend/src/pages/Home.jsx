@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   return (
-    <section className="h-screen flex items-center justify-center">
+    <section className="home flex items-center justify-center">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-3 text-white">
           {user ? `Welcome, ${user.name}` : "Welcome to Mernote"}
@@ -44,13 +44,13 @@ const Home = () => {
             <>
               <button
                 onClick={() => navigate("/login")}
-                className="bg-blue-600 px-4 py-2 rounded"
+                className="bg-blue-600 px-4 py-2 rounded cursor-pointer"
               >
                 Login
               </button>
               <button
                 onClick={() => navigate("/register")}
-                className="bg-gray-700 px-4 py-2 rounded"
+                className="bg-gray-700 px-4 py-2 rounded cursor-pointer"
               >
                 Register
               </button>

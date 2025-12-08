@@ -16,7 +16,7 @@ const Login = () => {
   };
   return (
     <section className="h-screen flex  items-center justify-center">
-      <form className="bg-gray-800 p-6 rounded w-80" onSubmit={handleSubmit}>
+      <form className="site-form" onSubmit={handleSubmit}>
         <label className="floating-label">
           <input
             type="text"
@@ -36,7 +36,9 @@ const Login = () => {
           <span>Enter your Password</span>
         </label>
 
-        <button className="btn btn-soft btn-accent">Login</button>
+        <button className="btn btn-soft btn-accent mb-3 cursor-pointer">
+          Login
+        </button>
         <div className="text-center">
           Didn't have a account?
           <Link to="/register" className="text-blue-500 hover:underline ml-1">
